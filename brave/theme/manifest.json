@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Tweed Day",
+  "version": "1.0",
+  "description": "Linen theme from the COSMIC Tweed Day rice: moss icons, one tan accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [233, 230, 226],
+      "frame_inactive": [233, 230, 226],
+      "frame_incognito": [233, 230, 226],
+      "frame_incognito_inactive": [233, 230, 226],
+      "background_tab": [233, 230, 226],
+      "background_tab_inactive": [233, 230, 226],
+      "background_tab_incognito": [233, 230, 226],
+      "background_tab_incognito_inactive": [233, 230, 226],
+      "toolbar": [246, 244, 241],
+      "tab_text": [118, 89, 61],
+      "tab_background_text": [88, 100, 79],
+      "tab_background_text_inactive": [88, 100, 79],
+      "tab_background_text_incognito": [88, 100, 79],
+      "tab_background_text_incognito_inactive": [88, 100, 79],
+      "bookmark_text": [44, 46, 52],
+      "toolbar_button_icon": [88, 100, 79],
+      "omnibox_background": [212, 210, 206],
+      "omnibox_text": [44, 46, 52],
+      "ntp_background": [233, 230, 226],
+      "ntp_text": [44, 46, 52],
+      "ntp_link": [118, 89, 61]
+    }
+  }
+}

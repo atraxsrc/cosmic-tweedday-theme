@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Tweed Day",
+  "version": "1.0",
+  "description": "Linen theme from the COSMIC Tweed Day rice: moss icons, one tan accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{6a6e1585-3843-47bb-803e-47719374838e}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#F6F4F1",
+      "toolbar_text": "#2c2e34",
+      "frame": "#E9E6E2",
+      "tab_background_text": "#58644f",
+      "tab_text": "#76593d",
+      "toolbar_field": "#d4d2ce",
+      "toolbar_field_text": "#2c2e34",
+      "toolbar_field_border_focus": "#76593D",
+      "toolbar_field_highlight": "#76593D",
+      "toolbar_field_highlight_text": "#E9E6E2",
+      "tab_line": "#76593D",
+      "popup": "#F6F4F1",
+      "popup_text": "#2c2e34",
+      "button_background_active": "#76593D",
+      "button_background_hover": "#d4d2ce",
+      "frame_inactive": "#E9E6E2",
+      "icons_attention": "#76593D",
+      "icons": "#58644f",
+      "ntp_background": "#E9E6E2",
+      "ntp_text": "#2c2e34",
+      "popup_border": "#586350",
+      "popup_highlight_text": "#E9E6E2",
+      "popup_highlight": "#76593D",
+      "sidebar_border": "#d4d2ce",
+      "sidebar_highlight_text": "#E9E6E2",
+      "sidebar_highlight": "#76593D",
+      "sidebar_text": "#2c2e34",
+      "tab_loading": "#76593D"
+    }
+  }
+}
