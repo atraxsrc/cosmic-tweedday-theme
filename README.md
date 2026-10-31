@@ -6,7 +6,8 @@
 
 Pop!_OS 24.04 on COSMIC in linen, flint and tan: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. A light rice in wool and wood;
-brick is kept for what is wrong.
+brick is kept for what is wrong. The light half of a pair;
+the dark half is [cosmic-tweed-theme](https://github.com/atraxsrc/cosmic-tweed-theme).
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-76593d?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-58644f?style=for-the-badge)
@@ -41,6 +42,14 @@ is at least 4.5:1 on the window background.
 | Dim | ![#929295](https://placehold.co/12x12/929295/929295.png) Comments | ![#929295](https://placehold.co/12x12/929295/929295.png) `#929295` |
 | Lines | ![#aba9a6](https://placehold.co/12x12/aba9a6/aba9a6.png) Box lines, inactive | ![#ABA9A6](https://placehold.co/12x12/aba9a6/aba9a6.png) `#ABA9A6` |
 
+| Role | Tweed Day | Tweed |
+|------|---|---|
+| Background | ![#E9E6E2](https://placehold.co/12x12/e9e6e2/e9e6e2.png) `#E9E6E2` | ![#292B31](https://placehold.co/12x12/292b31/292b31.png) `#292B31` |
+| Text | ![#2C2E34](https://placehold.co/12x12/2c2e34/2c2e34.png) `#2C2E34` | ![#D6D1C9](https://placehold.co/12x12/d6d1c9/d6d1c9.png) `#D6D1C9` |
+| Accent | ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D` | ![#BDA07F](https://placehold.co/12x12/bda07f/bda07f.png) `#BDA07F` |
+| Success | ![#58644F](https://placehold.co/12x12/58644f/58644f.png) `#58644F` | ![#919E85](https://placehold.co/12x12/919e85/919e85.png) `#919E85` |
+| Error | ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` | ![#E77D6C](https://placehold.co/12x12/e77d6c/e77d6c.png) `#E77D6C` |
+
 The accent is tan, 5.2:1 on the background and 5.9:1 on a container,
 so it stays the same colour wherever it is text; buttons and selections
 carry it with ivory text on top.
@@ -57,7 +66,7 @@ carry it with ivory text on top.
 ├── btop
 │   └── TweedDay.theme                 # btop colour theme
 ├── claude-desktop
-│   ├── cosmic-tweedday.jsonc          # Claude Desktop theme (claude-desktop-extra)
+│   ├── cosmic-tweed.jsonc          # Claude Desktop theme (claude-desktop-extra)
 │   └── install.sh
 ├── cosmic
 │   ├── TweedDay.ron                   # COSMIC Appearance import (Dark)
@@ -96,7 +105,7 @@ carry it with ivory text on top.
 │   ├── cosmic-tweedday.tdesktop-theme # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── vscode
-│   ├── themes/                  # Cursor / VS Code colour theme, Cosmic Tweed Day
+│   ├── themes/                  # Cursor / VS Code colour themes, Tweed (dark) + Tweed Day (light)
 │   ├── package.json             # extension manifest
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
@@ -134,6 +143,11 @@ applets and system UI (maximized apps stay solid), and corners are squared
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Tweed.ron` from
+[cosmic-tweed-theme](https://github.com/atraxsrc/cosmic-tweed-theme) into the
+Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 Tweed Day fills the Dark slot only. Put any other rice's light `.ron` in the Light
 slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
@@ -230,9 +244,10 @@ packing a `.crx`: [`brave/README.md`](brave/README.md).
 ## Claude Desktop
 
 For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
-Linux build. `claude-desktop/cosmic-tweedday.jsonc` carries the Tweed Day palette in
-both of the file's blocks, so Claude's own Settings → Appearance toggle makes
-no difference. Colours come from `cosmic/TweedDay.ron`, contrast-checked (text and
+Linux build. `claude-desktop/cosmic-tweed.jsonc` is one theme with both halves:
+Tweed in dark mode and Tweed Day in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and
 button text 4.5:1, accents 3:1).
 
 ```bash
@@ -240,19 +255,23 @@ button text 4.5:1, accents 3:1).
 ```
 
 It copies the file into `~/.config/Claude/themes.d/`. Then press
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-tweedday**.
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-tweed**.
+
+The same file ships in [`cosmic-tweed-theme`](https://github.com/atraxsrc/cosmic-tweed-theme),
+so installing from either repo gives the same theme.
 
 ---
 
 ## Cursor editor
 
-`vscode/` is a colour theme extension for [Cursor](https://cursor.com):
-**Cosmic Tweed Day**. It is a plain VS Code theme extension, so VS Code and VSCodium
-take it too. Code is coloured the way Neovim is in the rice; the workbench is
-linen with ivory menus, hovers and inputs, tan on the active tab, buttons
-and menu highlight, and the integrated terminal uses the COSMIC Terminal
-scheme. Cursor builds its Agent and chat panels from the same theme colours,
-so they follow along.
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic Tweed** and **Cosmic Tweed Day**. It is a
+plain VS Code theme extension, so VS Code and VSCodium take it too, and the
+same extension ships in cosmic-tweed-theme. Code is coloured the way Neovim is
+in the rice; the workbench is linen with ivory menus, hovers and inputs, tan
+on the active tab, buttons and menu highlight, and the integrated terminal
+uses the COSMIC Terminal scheme. Cursor builds its Agent and chat panels from
+the same theme colours, so they follow along.
 
 ```bash
 ./vscode/install.sh
@@ -261,8 +280,9 @@ so they follow along.
 It packs `vscode/` into a `.vsix` and installs it with
 `cursor --install-extension`; run it again after editing the theme. Then press
 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
-**Cosmic Tweed Day**. The colours and the contrast notes are in
-[`vscode/README.md`](vscode/README.md).
+**Cosmic Tweed Day**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between Tweed and Tweed Day; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -290,6 +310,9 @@ background is plain linen; to put a wallpaper behind the chat instead
 
 Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
 premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so Tweed, the dark half, ships its
+own theme.
 
 ---
 
@@ -529,11 +552,16 @@ The GUI steps it cannot do are printed at the end:
 2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/TweedDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
-5. Claude Desktop: Ctrl+Shift+T → `cosmic-tweedday`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-tweed`, Appearance → Light
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
 
 Skip 1 and 2 when that slot already holds Tweed Day. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Tweed Day ↔ [Tweed](https://github.com/atraxsrc/cosmic-tweed-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Leaving Tweed Day is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
 puts the Pop cursor back.

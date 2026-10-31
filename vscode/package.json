@@ -1,7 +1,7 @@
 {
-  "name": "cosmic-tweedday-theme",
-  "displayName": "Cosmic Tweed Day",
-  "description": "Dark colour theme from the COSMIC Tweed Day rice, syntax as in its Neovim scheme.",
+  "name": "cosmic-tweed-theme",
+  "displayName": "Cosmic Tweed / Cosmic Tweed Day",
+  "description": "Cosmic Tweed (dark) and Cosmic Tweed Day (light), the COSMIC rice pair, for Cursor and VS Code",
   "version": "1.0.0",
   "publisher": "atraxsrc",
   "license": "MIT",
@@ -22,13 +22,20 @@
   ],
   "keywords": [
     "theme",
+    "dark",
     "light",
     "cosmic",
+    "tweed",
     "tweedday",
     "cursor"
   ],
   "contributes": {
     "themes": [
+      {
+        "label": "Cosmic Tweed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-tweed-color-theme.json"
+      },
       {
         "label": "Cosmic Tweed Day",
         "uiTheme": "vs",

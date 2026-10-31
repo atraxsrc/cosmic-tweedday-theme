@@ -4,15 +4,15 @@
 # Backs up a different existing copy. Never deletes.
 set -euo pipefail
 
-SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/cosmic-tweedday.jsonc"
+SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/cosmic-tweed.jsonc"
 DEST_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/Claude/themes.d"
-DEST="$DEST_DIR/cosmic-tweedday.jsonc"
+DEST="$DEST_DIR/cosmic-tweed.jsonc"
 
 mkdir -p "$DEST_DIR"
 if [[ -f "$DEST" ]] && ! cmp -s "$SRC" "$DEST"; then
   BAK="$DEST.bak-$(date +%Y%m%d-%H%M%S)"
   cp "$DEST" "$BAK"
-  echo "  backed up existing cosmic-tweedday.jsonc -> $(basename "$BAK")"
+  echo "  backed up existing cosmic-tweed.jsonc -> $(basename "$BAK")"
 fi
 cp "$SRC" "$DEST"
 echo "  installed $DEST"
