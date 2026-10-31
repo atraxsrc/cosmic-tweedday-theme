@@ -1,0 +1,39 @@
+{
+  "name": "cosmic-tweedday-theme",
+  "displayName": "Cosmic Tweed Day",
+  "description": "Dark colour theme from the COSMIC Tweed Day rice, syntax as in its Neovim scheme.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#E9E6E2",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-tweedday-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light",
+    "cosmic",
+    "tweedday",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Tweed Day",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-tweedday-color-theme.json"
+      }
+    ]
+  }
+}
