@@ -1,0 +1,41 @@
+# 256-colour codes nearest the Tweed Day palette on linen (lsd 1.0.0 does not accept
+# #hex here): 95 tan, 124 brick, 130 salmon, 240 moss, 240 cream,
+# 240 olive, 59 putty, 246 ash.
+user: 240
+group: 59
+permission:
+  read: 59
+  write: 240
+  exec: 95
+  exec-sticky: 95
+  no-access: 246
+  octal: 240
+  acl: 240
+  context: 240
+date:
+  hour-old: 240
+  day-old: 240
+  older: 246
+size:
+  none: 246
+  small: 240
+  medium: 240
+  large: 124
+inode:
+  valid: 240
+  invalid: 124
+links:
+  valid: 240
+  invalid: 124
+tree-edge: 246
+git-status:
+  default: 246
+  unmodified: 246
+  ignored: 246
+  new-in-index: 240
+  new-in-workdir: 240
+  typechange: 240
+  deleted: 124
+  renamed: 240
+  modified: 130
+  conflicted: 124
