@@ -69,7 +69,7 @@ carry it with ivory text on top.
 │   ├── cosmic-tweed.jsonc          # Claude Desktop theme (claude-desktop-extra)
 │   └── install.sh
 ├── cosmic
-│   ├── TweedDay.ron                   # COSMIC Appearance import (Dark)
+│   ├── TweedDay.ron                   # COSMIC Appearance import (Light)
 │   ├── config/                  # baseline settings: fonts, icons, terminal look
 │   └── install.sh
 ├── cosmic-term
@@ -132,7 +132,9 @@ carry it with ivory text on top.
 
 ## COSMIC Desktop
 
-Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/TweedDay.ron`
+This is a **Light** theme, so it goes in COSMIC's Light slot:
+
+Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/TweedDay.ron`
 
 Accent is tan ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D`. Use the `+` control if you want a custom swatch.
 
@@ -147,10 +149,6 @@ Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 Pairing tip: import `Tweed.ron` from
 [cosmic-tweed-theme](https://github.com/atraxsrc/cosmic-tweed-theme) into the
 Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
-Firefox and the shell layer do not follow the toggle; those are per-rice files.
-
-Tweed Day fills the Dark slot only. Put any other rice's light `.ron` in the Light
-slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
 Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
@@ -176,7 +174,7 @@ Icons below) and import the terminal scheme first, then:
 It backs up each file it replaces to `*.bak` and COSMIC applies it live.
 
 The interface font is the Light weight on purpose. COSMIC sets interface text
-brightness itself (the text tint only picks the hue), so on these dark panels
+brightness itself (the text tint only picks the hue), so on these light panels
 labels land near ![#4A432A](https://placehold.co/12x12/4a432a/4a432a.png) `#4A432A` whatever tint you choose; the thinner strokes are
 what calms them at night. Settings → Fonts lists only families, so the weight
 lives in `cosmic/config/com.system76.CosmicTk/v1/interface_font`.
@@ -188,8 +186,8 @@ lives in `cosmic/config/com.system76.CosmicTk/v1/interface_font`.
 The desktop `.ron` does not colour ANSI text.
 
 1. COSMIC Terminal → **View → Color schemes…** (not Settings → Appearance)
-2. Dark tab → **Import** → `cosmic-term/TweedDay-term.ron`
-3. View → Settings → Appearance → Color scheme (dark) → **Tweed Day**
+2. Light tab → **Import** → `cosmic-term/TweedDay-term.ron`
+3. View → Settings → Appearance → Color scheme (light) → **Tweed Day**
 
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
@@ -217,7 +215,7 @@ Two layers:
    This is the main look.
 2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, tan
    menu hover, tan accents and blank new-tab tiles on top of the theme
-   (they also work with Firefox's built-in Dark theme):
+   (they also work with Firefox's built-in Light theme):
 
 ```bash
 ./firefox/install.sh
@@ -439,7 +437,7 @@ cp btop/TweedDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-TweedDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Tan** ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D` (default), **Brick** ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` and **Dark** ![#DFDCD8](https://placehold.co/12x12/dfdcd8/dfdcd8.png) `#DFDCD8` with tan symbols.
+three colors: **Tan** ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D` (default), **Brick** ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` and **Dark** ![#2C2E34](https://placehold.co/12x12/2c2e34/2c2e34.png) `#2C2E34` with tan symbols.
 
 ![Cosmic-TweedDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-TweedDay.png)
 
@@ -472,10 +470,10 @@ git clone https://github.com/atraxsrc/cosmic-tweedday-theme.git
 cd cosmic-tweedday-theme
 
 # desktop
-# Settings → Appearance → Dark → Import cosmic/TweedDay.ron
+# Settings → Appearance → Light → Import cosmic/TweedDay.ron
 
 # terminal
-# View → Color schemes → Import cosmic-term/TweedDay-term.ron
+# View → Color schemes → Light tab → Import cosmic-term/TweedDay-term.ron
 
 # firefox theme: about:debugging → Load Temporary Add-on → firefox/theme/manifest.json
 # (or zip and sign it, see firefox/README.md)
@@ -532,7 +530,7 @@ the same script.
 
 It backs up every file it replaces, then:
 
-- copies `cosmic/config/` (fonts, terminal look, icons) and turns dark mode on.
+- copies `cosmic/config/` (fonts, terminal look, icons) and turns light mode on.
   The terminal scheme and icon theme are only replaced when the current one is
   not already a Tweed Day variant, so a dimmer text variant or another icon colour
   survives. Icons stay as they are until `./icons/install.sh` has run.
@@ -548,8 +546,8 @@ It backs up every file it replaces, then:
 
 The GUI steps it cannot do are printed at the end:
 
-1. Settings → Desktop → Appearance → Dark → Import `cosmic/TweedDay.ron`
-2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/TweedDay-term.ron`
+1. Settings → Desktop → Appearance → Light → Import `cosmic/TweedDay.ron`
+2. COSMIC Terminal → View → Color schemes → Light tab → Import `cosmic-term/TweedDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
 5. Claude Desktop: Ctrl+Shift+T → `cosmic-tweed`, Appearance → Light

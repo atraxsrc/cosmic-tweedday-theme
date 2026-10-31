@@ -41,16 +41,16 @@ Code is coloured the way Neovim is in the rice (`nvim/colors/*.lua`):
 | Role | Tweed | Tweed Day |
 |------|---|---|
 | Keywords, tags | ![#BDA07F](https://placehold.co/12x12/bda07f/bda07f.png) `#BDA07F` | ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D` |
-| Functions, tag attributes | ![#F3E9BD](https://placehold.co/12x12/C9C2B4/C9C2B4.png) `#F3E9BD` | ![#695F3B](https://placehold.co/12x12/C9C2B4/C9C2B4.png) `#695F3B` |
-| Strings | ![#919E85](https://placehold.co/12x12/9FA5A9/9FA5A9.png) `#919E85` | ![#58644F](https://placehold.co/12x12/9FA5A9/9FA5A9.png) `#58644F` |
-| Numbers, constants | ![#F28B7C](https://placehold.co/12x12/D87C4A/D87C4A.png) `#F28B7C` | ![#A13A2B](https://placehold.co/12x12/D87C4A/D87C4A.png) `#A13A2B` |
+| Functions, tag attributes | ![#F3E9BD](https://placehold.co/12x12/f3e9bd/f3e9bd.png) `#F3E9BD` | ![#695F3B](https://placehold.co/12x12/695f3b/695f3b.png) `#695F3B` |
+| Strings | ![#919E85](https://placehold.co/12x12/919e85/919e85.png) `#919E85` | ![#58644F](https://placehold.co/12x12/58644f/58644f.png) `#58644F` |
+| Numbers, constants | ![#F28B7C](https://placehold.co/12x12/f28b7c/f28b7c.png) `#F28B7C` | ![#A13A2B](https://placehold.co/12x12/a13a2b/a13a2b.png) `#A13A2B` |
 | Types, classes, modules | ![#A8B49D](https://placehold.co/12x12/a8b49d/a8b49d.png) `#A8B49D` | ![#586350](https://placehold.co/12x12/586350/586350.png) `#586350` |
-| Imports, macros, decorators, escapes, `this` / `self` | ![#B49A7B](https://placehold.co/12x12/9D7E6F/9D7E6F.png) `#B49A7B` | ![#775C42](https://placehold.co/12x12/9D7E6F/9D7E6F.png) `#775C42` |
-| Parameters (italic) | ![#ABA69C](https://placehold.co/12x12/A5AEB4/A5AEB4.png) `#ABA69C` | ![#666157](https://placehold.co/12x12/A5AEB4/A5AEB4.png) `#666157` |
-| Operators, punctuation | ![#9F9A91](https://placehold.co/12x12/7F7F7F/7F7F7F.png) `#9F9A91` | ![#655F58](https://placehold.co/12x12/7F7F7F/7F7F7F.png) `#655F58` |
-| Comments (italic) | ![#6B6B6E](https://placehold.co/12x12/565D60/565D60.png) `#6B6B6E` | ![#929295](https://placehold.co/12x12/565D60/565D60.png) `#929295` |
+| Imports, macros, decorators, escapes, `this` / `self` | ![#B49A7B](https://placehold.co/12x12/b49a7b/b49a7b.png) `#B49A7B` | ![#775C42](https://placehold.co/12x12/775c42/775c42.png) `#775C42` |
+| Parameters (italic) | ![#ABA69C](https://placehold.co/12x12/aba69c/aba69c.png) `#ABA69C` | ![#666157](https://placehold.co/12x12/666157/666157.png) `#666157` |
+| Operators, punctuation | ![#9F9A91](https://placehold.co/12x12/9f9a91/9f9a91.png) `#9F9A91` | ![#655F58](https://placehold.co/12x12/655f58/655f58.png) `#655F58` |
+| Comments (italic) | ![#6B6B6E](https://placehold.co/12x12/6b6b6e/6b6b6e.png) `#6B6B6E` | ![#929295](https://placehold.co/12x12/929295/929295.png) `#929295` |
 | Accent | ![#BDA07F](https://placehold.co/12x12/bda07f/bda07f.png) `#BDA07F` | ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D` |
-| Errors, deleted, conflicts | ![#E77D6C](https://placehold.co/12x12/DE6145/DE6145.png) `#E77D6C` | ![#B32A19](https://placehold.co/12x12/DE6145/DE6145.png) `#B32A19` |
+| Errors, deleted, conflicts | ![#E77D6C](https://placehold.co/12x12/e77d6c/e77d6c.png) `#E77D6C` | ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` |
 
 The workbench takes the window colour of the rice's `cosmic/TweedDay.ron` for the
 editor, side bars, panel, title and status bar, the container colours for

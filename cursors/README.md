@@ -10,7 +10,7 @@ All patched so they work in COSMIC's own apps.
 | ------- | ------- | ---- | ------------------- | --------- |
 | **Tan** (default) | ![](../assets/cursors/Oxygen-TweedDay-Tan.png) | ![#76593D](https://placehold.co/12x12/76593d/76593d.png) `#76593D` | 5.2:1 | Tan folders |
 | **Brick** | ![](../assets/cursors/Oxygen-TweedDay-Brick.png) | ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` | 5.2:1 | Brick folders |
-| **Dark** | ![](../assets/cursors/Oxygen-TweedDay-Dark.png) | ![#DFDCD8](https://placehold.co/12x12/dfdcd8/dfdcd8.png) `#DFDCD8` | 1.1:1 | Dark folders |
+| **Dark** | ![](../assets/cursors/Oxygen-TweedDay-Dark.png) | ![#2C2E34](https://placehold.co/12x12/2c2e34/2c2e34.png) `#2C2E34` | 10.9:1 | Dark folders |
 
 Each variant is a normal folder here (`Oxygen-TweedDay-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.
