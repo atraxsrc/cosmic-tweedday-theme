@@ -1,0 +1,6 @@
+name = "TweedDay"
+mode = "light"
+theme = "TweedDay.ron"
+pair = "tweed"
+terminal = "TweedDay-term.ron"
+btop = "TweedDay"
