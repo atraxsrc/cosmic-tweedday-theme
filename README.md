@@ -453,7 +453,7 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `tweedday-<subject>`:
-the same five warm still lifes as Tweed, lifted into Tweed Day's linen tones: a turntable on wood, a record
+the same five warm still lifes as Tweed, the photographs flipped onto the linen and the two flat ones pinned to it: a turntable on wood, a record
 on putty, a stack of cassettes, a twin-lens camera on a desk and a library
 under string lights, plus the anime portrait from the screenshot
 (`tweedday-anime.png`) in the palette's own tones. The record
