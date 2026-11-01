@@ -1,0 +1,45 @@
+# TweedDay for Ghostty, part of cosmic-tweedday-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = TweedDay
+# or, with the Tweed half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:Tweed,light:TweedDay
+
+background = #E9E6E2
+foreground = #2C2E34
+
+cursor-color = #76593D
+cursor-text = #E9E6E2
+
+selection-background = #D4D2CE
+selection-foreground = #2C2E34
+
+split-divider-color = #D4D2CE
+unfocused-split-fill = #E9E6E2
+
+# black
+palette = 0=#DFDCD8
+palette = 8=#929295
+# red
+palette = 1=#B32A19
+palette = 9=#8F2214
+# green
+palette = 2=#58644F
+palette = 10=#46503F
+# yellow
+palette = 3=#695F3B
+palette = 11=#554D30
+# blue
+palette = 4=#76593D
+palette = 12=#624A33
+# magenta
+palette = 5=#A13A2B
+palette = 13=#812E22
+# cyan
+palette = 6=#685D50
+palette = 14=#6F5D4E
+# white
+palette = 7=#59544B
+palette = 15=#202228
