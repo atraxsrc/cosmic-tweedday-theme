@@ -136,7 +136,7 @@ carry it with ivory text on top.
 │   ├── TweedDay.conf            # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -518,8 +518,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.tweedday]` and used by name: the directory in ![#586350](https://placehold.co/12x12/586350/586350.png) `#586350`,
 the branch in ![#695F3B](https://placehold.co/12x12/695f3b/695f3b.png) `#695F3B`, ![#A13A2B](https://placehold.co/12x12/a13a2b/a13a2b.png) `#A13A2B` for a dirty tree, a ![#58644F](https://placehold.co/12x12/58644f/58644f.png) `#58644F` prompt
-character that turns ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#B32A19](https://placehold.co/12x12/b32a19/b32a19.png) `#B32A19` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/tweedday.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
