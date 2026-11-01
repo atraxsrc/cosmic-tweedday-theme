@@ -13,6 +13,7 @@ the dark half is [cosmic-tweed-theme](https://github.com/atraxsrc/cosmic-tweed-t
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-58644f?style=for-the-badge)
 ![Tweed Day](https://img.shields.io/badge/Theme-TweedDay-e9e6e2?style=for-the-badge&labelColor=76593d)
 ![Firefox](https://img.shields.io/badge/Firefox-TweedDay-76593d?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-76593d?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-655f58?style=for-the-badge)
 
 </div>
