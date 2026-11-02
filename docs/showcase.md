@@ -43,7 +43,7 @@ flowchart LR
 - [x] `./icons/install.sh` for the **Cosmic-TweedDay** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-TweedDay-Tan
-- [x] Wallpaper: `backgrounds/tweedday-vinyl.png`
+- [x] Wallpaper: `backgrounds/tweedday-anime.png`
 - [ ] Screenshot for the README
 
 ## The baseline every rice shares
