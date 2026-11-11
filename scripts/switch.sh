@@ -5,7 +5,7 @@
 # repo; only the block below differs.
 set -euo pipefail
 
-NAME="TweedDay"                         # shown in messages
+NAME="Tweed Day"                        # shown in messages
 SLUG="tweedday"                         # zsh/<slug>.zsh, nvim/lua/plugins/<slug>.lua
 MODE="light"                         # the COSMIC half this rice fills: dark or light
 RON="TweedDay.ron"                      # desktop theme in cosmic/
